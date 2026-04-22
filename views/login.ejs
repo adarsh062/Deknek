@@ -102,8 +102,8 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <% if (error) { %>
-            <div class="error-message"><%= error %></div>
+        <% if (locals.error) { %>
+            <div class="error-message"><%= locals.error %></div>
         <% } %>
         <form action="/login" method="POST">
             <div class="input-group">
